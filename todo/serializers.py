@@ -20,3 +20,8 @@ class TodoModifySerializer(serializers.ModelSerializer):
     class Meta:
         model = Todo
         fields = ('title', 'detail', 'completed')
+
+class TodoDoneSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Todo
+        fields = ('completed')
